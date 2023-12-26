@@ -1,2 +1,22 @@
-test file
-krishna 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Just basic HTML">
+    <meta name="keyboarsd" content="HTML,CSS">
+    <meta name="author" content="Prithivi,krishna,aarju,safal">
+    <meta http-equiv="refresh" content="1">
+    <link rel="stylesheet" href="style .css">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="Home"></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </li>
+    </ul>
+</body>
+</html>
