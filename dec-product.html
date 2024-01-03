@@ -8,6 +8,9 @@
             <meta http-equiv="refresh" content="120">
         <link rel="stylesheet" href="style.css">
         <style>
+            html{
+                scroll-behavior: smooth;
+            }
             .product-nav{
                 margin-left: 35%;
                 border-radius:30px;
@@ -30,6 +33,18 @@
             }
             .product-nav ul li a:hover{
                 color: #8a8a8a;
+            }
+            .img{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                display: flex;
+            }
+            .text{
+                margin-top: 15%;
+            }
+            .row{
+                display: flex;
+                justify-content: space-around;
             }
 
         </style>
@@ -75,27 +90,78 @@
                 <div class="product-nav">
                     <ul>
                         <li><a href="#overview">Overview</a></li>
-                        <li><a href="">Spces</a></li>
+                        <li><a href="#des">Description</a></li>
                         <li><a href=""><img src="/images/Cart.png" alt="" style="width: 25px; height: auto;"></a></li>
                     </ul>
                 </div>
 
                 <!-- product-nav ends -->
-                <div class="text" style="color: white; margin-left: 15%; margin-top: 20%; margin-bottom:0%; font-size: 19px;">
-                    <h1 >Now at just @2000$</h1>
-                    <h2 style="margin-left: 20%; margin-top: 0px; "><strike>@3000$</strike></h2>
+                <div style="color: white; margin-left: 15%; margin-top: 20%; margin-bottom:0%; font-size: 19px;">
+                    <h1 style="font-size: 60px; margin-bottom: 0%;">P1S 3D-Printer</h1>
+                    <h1 style="margin-bottom: 0%; font-size: 25px; margin-left: 5%; margin-top: 0%; color: black;">Now at just @2000$</h1>
+                    <h2 style="margin-left: 19%; margin-top: 0px; font-size: 15px;color: black; "><strike>@3000$</strike></h2>
                 </div>
             </div>
             <div class="des-img">
-                <img src="/images/bulid.png" alt="P1S-Image" width="1447px">
-                <img src="/images/multi-color.png" alt="P1S-Image" width="1447px">
-                <img src="/images/using.png" alt="P1S-Image"  width="1447px">
-                <video src=""></video> 
-
-
-                <!-- to continue from here -->
+                <div class="row">
+                    <div class="img" style=" width: 720px; height: 600px;">
+                        <img src="/images/use.png" alt="use">
+                    </div>
+                    <div align="center" class="text">
+                        <h1 style="color: white;">Easy to use</h1>
+                        <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione odit in, consectetur aliquam tempora? Exercitationem, veritatis. Dolor, tempora laudantium.</p>
+                    </div>      <!----tooo continue-->
+                </div>
+                <div class="row">
+                    
+                    <div align="center" class="text">
+                        <h1 style="color: white;"> No Boundries for creativity</h1>
+                        <h2 style="color: white;">Multi-color <span style="color: red;"> capability </span></h2>
+                        <p style="color: white;"> Get the AMS combo to unleash Multi-color printing capability.(up to 16-color if you stack up 4 AMS units).</p>
+                    </div>
+                    <div class="img" style="width: 720px; height: 600px;">
+                        <img src="/images/multi-color.png" alt="">
+                    </div>
+                    
+                    
+                </div>
+                <div class="img">
+                    <div class="img" style="width: 1250px; height: 600px;">
+                        <img src="/images/desmable.png" alt="">
+                    </div>
+                    <div align="center" class="text">
+                        <h1 style="color: white;">Best bulid quality<!-- removanle encloser--></h1>
+                        <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione odit in, consectetur aliquam tempora? Exercitationem, veritatis. Dolor, tempora laudantium.</p>
+                    </div>
+                </div>
+                <div align="center" class="video">
+                    <h1 style="color: white;">Best Printing Quality</h1>
+                    <h2 style="color: white;">Get High qualtiy printing with P1S 3d printer</h2>
+                    <video controls autoplay loop style="width: 70%; height: auto;">
+                        <source src="/images/printing.mp4">
+                    </video>
+                </div>
                 
-                
+            </div>
+
+            <div id="des" align="center" style="color: #8a8a8a; margin-left: 5%; margin-right: 5%;"">
+                <h1>Description</h1>
+                <p>Meet the Bambu Lab P1S - your new partner in unleashing your creativity with 3D printing! Imagine a canvas of 256 x 256 x 256 mm, giving you plenty of room to turn your dream designs into reality.
+                    This printer is like a magician with materials. From PLA to PETG, TPU to ABS, and even PVA and PET - you name it, the Bambu Lab P1S can handle it. It's like having a palette of possibilities for your projects.
+                    And speed? Hold onto your hats! This baby can zip through prints at up to 500 mm/s, making sure your ideas come to life in no time. It accelerates smoothly, up to 20 m/s, because creativity waits for no one!
+                    But what about those "oh no" moments? Bambu Lab P1S has your back. It's got sensors to tell you when you're running out of filament, so you're not caught mid-print. And don't worry about power outages - this printer can recover and pick up right where it left off. Plus, keep an eye on your masterpiece with the built-in camera.
+                    Easy, breezy - that's the motto. Whether you're a 3D printing pro or just dipping your toes into the creative waters, the Bambu Lab P1S is your trusty sidekick, ready to make your creative journey smoother than ever. Let those ideas flow, and let the Bambu Lab P1S bring them to life!
+                </p>
+                <h2 align="left">Product Features</h2>
+                <ul align="left">
+                    <li>Works right out of the box, set up in 15 minutes.</li>
+                    <li>Well-polished hardware and software.</li> 
+                    <li>Enclosed-body for high-temperature filament printing.</li>
+                    <li>Up to 16-color printing with AMS.</li>
+                    <li>Up to 20000 mm/s² acceleration, prints a benchy in 18min.</li>
+                    <li>Built-in camera for remote monitoring and timelapse.</li>
+                </ul>
+
             </div>
             
         </div>
