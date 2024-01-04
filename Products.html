@@ -32,15 +32,70 @@
                 color: #8a8a8a;
             }
             .product-container{
+                margin-top: 15px;
                 width: 95%;
                 height: auto;
                 margin-left: 2.5%;
-                border: solid;
-                border-color: #8a8a8a;
             }
-            .products-section{
+            .product-row{
+                border: 2px solid white;
+                margin-bottom: 15px;
+            }
+            .super-product{
+                color: black;
+            }
+            .product-section{
                 display: flex;
                 justify-content: space-evenly;
+                flex-direction: row;
+                margin-top: 0;
+            }
+            .product{
+                width: 270px;
+                height: 370px;
+                background-color: white;
+                margin: 32px;
+                border-radius: 30px;
+            }
+            .more{
+                width: 150px;
+                height: auto;
+                font-size: 10px;
+                background-color: white;
+                border-radius: 30px;
+                margin-top: 100%;
+                padding: 10px;
+            }
+            .Section-head{
+                margin-left: 80px;
+                color: white;
+                margin-bottom: 0px;
+            }
+
+            .product-name{
+                margin-top: 10px;
+                margin-bottom: 8px;
+                
+            }
+            .buy{
+                color: black;
+                margin-left: 35%; 
+            }
+            .buy:hover{
+                text-decoration: underline;
+            }
+            .product-img{
+                margin-top: 25px;
+                margin-left: 30px;
+                margin-right: 30px;
+                width: 210px ;
+                height: 260px;
+                background-color: #8a8a8a;
+                border-radius: 15px;
+            }
+            .product-section a{
+                text-decoration: none;
+                color: black;
             }
 
 
@@ -68,13 +123,13 @@
                                 <a href="">Home</a>
                             </li>
                             <li>
-                                <a href="">Product</a>
+                                <a href="Products.html">Product</a>
                             </li>
                             <li>
                                 <a href="">Blog</a>
                             </li>
                             <li>
-                                <a href="">Servies</a>
+                                <a href="Services.html">Servies</a>
                             </li>
                             <li>
                                 <a href="">About us</a>
@@ -87,17 +142,83 @@
         <!-- navigation ends here -->
         <div class="product-nav">
             <ul>
-                <li><a href="">All</a></li>
-                <li><a href="">3d-Printer</a></li>
+                <li><a href="Products.html">All</a></li>
+                <li><a href="3d-printer.html">3d-Printer</a></li>
                 <li><a href="">Laser-Printer</a></li>
                 <li><a href="">Dot-Matrix-Printer</a></li>
                 <li><a href="">Inkjet printer</a></li>
-                <li><a href="">Accesroies</a></li>
+                <li><a href="">Accessories</a></li>
             </ul>
         </div>
 
         <div class="product-container">
-            <!-- to continue here -->
+            <div class="product-row">
+                <h1 class="Section-head">3D-Printer</h1>
+                <div class="product-section">
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/3d-printer/P1S.png" alt="P1S">
+                            <h2 class="product-name" align="center">Bambu Lab P1S</h2>
+                            <a class="buy" href=""> Buy Now </a>
+                        </div>
+                    </a>
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/3d-printer/K1-Max.png" alt="K1 Max">
+                            <h2 class="product-name" align="center">K1 Max</h2>
+                            <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
+                        </div>
+                    </a>
+                    <a class="super-product" href="dec-product.html">
+                        <div class="product">
+                            <img class="product-img" src="/images/3d-printer/Ender-3-V3-KE.png" alt="Ender3 V3 KE">
+                            <h2 class="product-name" align="center">Ender3 V3 KE</h2>
+                            <a class="buy" href="">Buy Now</a>
+                        </div>
+                    </a>
+                    <a class="super-product" href="3d-printer.html">
+                        <div class="more">
+                            <h1 align="center">See More</h1>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="product-row">
+                <h1 class="Section-head">Laser-Printer</h1>
+                <div class="product-section">
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="more"><h1 align="center">See More</h1></div></a>
+                </div>
+            </div>
+            <div class="product-row">
+                <h1 class="Section-head">Dot-Matrix-Printer</h1>
+                <div class="product-section">
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="more"><h1 align="center">See More</h1></div></a>          
+                </div>
+            </div>
+            <div class="product-row">
+                <h1 class="Section-head">Inkjet printer</h1>
+                <div class="product-section">
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="more"><h1 align="center">See More</h1></div></a>          
+                </div>
+            </div>
+            <div class="product-row">
+                <h1 class="Section-head">Accesroies</h1>
+                <div class="product-section">
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="product"></div></a>
+                    <a class="super-product" href=""><div class="more"><h1 align="center">See More</h1></div></a>          
+                </div>
+            </div>
         </div>
 
 
