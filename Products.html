@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>Product</title>
         <meta name="Descrption" content="product page of inkspire (all the types of printer they sell)">
@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="style.css">
         <style>
 
-            /* .product-nav starts here */
-
+            /* styling for product-nav starts here */
             .product-nav{
                 margin-left: 2.5%;
                 border-radius:30px;
@@ -35,7 +34,7 @@
                 color: #8a8a8a;
             }
 
-            /* .product-nav ends here */
+            /* styling for product-nav ends here */
 
             .product-container{
                 margin-top: 15px;
@@ -58,7 +57,7 @@
             }
             .product{
                 width: 270px;
-                height: 370px;
+                height: 410px;
                 background-color: white;
                 margin: 32px;
                 border-radius: 30px;
@@ -111,6 +110,7 @@
         <!-- navigation starts here -->
         
         <nav>
+            <!-- used table to align logo and navigation  -->
             <table width="100%" >
                 <tr >
                     <th align="left" style="width: 60%;  padding-bottom: 0%;" >
@@ -118,7 +118,9 @@
                     </th>
 
                     <th class="nav-list" style="height: 40px;">
-                        <ul>
+                        <!-- parent container ul -->
+                        <ul>  
+                            <!-- child elements li -->
                             <li>
                                 <a href="">Home</a>
                             </li>
@@ -143,11 +145,16 @@
 
         <!-- navigation ends here -->
 
+
+
+
         <!-- product-nav start here -->
 
 
         <div class="product-nav">
+            <!-- parent container ul -->
             <ul>
+                <!-- child elements li -->
                 <li><a href="Products.html">All</a></li>
                 <li><a href="3d-printer.html">3d-Printer</a></li>
                 <li><a href="Laser-Printer.html">Laser-Printer</a></li>
@@ -168,12 +175,18 @@
             <!-- 3D-Printer -->
 
             <div class="product-row">
-                <h1 class="Section-head">3D-Printer</h1>
+                <h1 class="Section-head">3D-Printer</h1>  <!--header to know the type of product -->
+
+                <!-- parent container -->
+
                 <div class="product-section">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
                     <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/3d-printer/P1S.png" alt="P1S">
-                            <h2 class="product-name" align="center">Bambu Lab P1S</h2>
+                            <h2 class="product-name" align="center">Bambu Lab P1S <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href=""> Buy Now </a>
                         </div>
                     </a>
@@ -181,7 +194,7 @@
                     <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/3d-printer/K1-Max.png" alt="K1 Max">
-                            <h2 class="product-name" align="center">K1 Max</h2>
+                            <h2 class="product-name" align="center">K1 Max <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
                         </div>
                     </a>
@@ -189,10 +202,14 @@
                     <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/3d-printer/Ender-3-V3-KE.png" alt="Ender3 V3 KE">
-                            <h2 class="product-name" align="center">Ender3 V3 KE</h2>
+                            <h2 class="product-name" align="center"> <br> <span style="font-size: 17px;"> Price : $2.00 </span> Ender3 V3 KE</h2>
                             <a class="buy" href="">Buy Now</a>
                         </div>
                     </a>
+
+
+                    <!-- see more to go to dedicated products section of that kind -->
+
 
                     <a class="super-product" href="3d-printer.html">
                         <div class="more">
@@ -208,66 +225,85 @@
 
 
             <div class="product-row">
-                <h1 class="Section-head">Laser-Printer</h1>
+                <h1 class="Section-head">Laser-Printer</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
                 <div class="product-section">
-                    <a class="super-product" href="">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link)-->
+
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/laser-Printer/DCP-B7535DW.png" alt="DCP-B7535DW">
-                            <h2 class="product-name" align="center">DCP-B7535DW</h2>
+                            <h2 class="product-name" align="center">DCP-B7535DW <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href=""> Buy Now </a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/laser-Printer/HL-B2080DW.png" alt="HL-B2080DW">
-                            <h2 class="product-name" align="center">HL-B2080DW</h2>
+                            <h2 class="product-name" align="center">HL-B2080DW <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/laser-Printer/HL-L3270CDW.png" alt="HL-L3270CDW">
-                            <h2 class="product-name" align="center">HL-L3270CDW</h2>
+                            <h2 class="product-name" align="center">HL-L3270CDW <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="">Buy Now</a>
                         </div>
                     </a>
 
+                    <!-- see more to go to dedicated products section of that kind -->
+
                     <a class="super-product" href="Laser-Printer.html">
                         <div class="more">
-                            <h1 align="center">See More</h1>
+                            <h1 align="center">See More </h1>
                         </div>
                     </a>
                 </div>
             </div>
 
+
+            <!-- >Dot-Matrix-Printer -->
+
             <div class="product-row">
-                <h1 class="Section-head">Dot-Matrix-Printer</h1>
+                <h1 class="Section-head">Dot-Matrix-Printer</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
                 <div class="product-section">
-                    <a class="super-product" href="">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Dot-Matrix-Printers/MSP 250.png" alt="MSP 250">
-                            <h2 class="product-name" align="center">MSP 250</h2>
+                            <h2 class="product-name" align="center">MSP 250 <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href=""> Buy Now </a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Dot-Matrix-Printers/Msp 240 Classic.png" alt="Msp 240 Classic">
-                            <h2 class="product-name" align="center">Msp 240 Classic</h2>
+                            <h2 class="product-name" align="center">Msp 240 Classic <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Dot-Matrix-Printers/LX-310.png" alt="LX-310">
-                            <h2 class="product-name" align="center">LX-310</h2>
+                            <h2 class="product-name" align="center">LX-310 <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="">Buy Now</a>
                         </div>
                     </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
 
                     <a class="super-product" href="Dot-Matrix-Printer.html">
                         <div class="more">
@@ -282,31 +318,39 @@
 
 
             <div class="product-row">
-                <h1 class="Section-head">Inkjet printer</h1>
+                <h1 class="Section-head">Inkjet printer</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
                 <div class="product-section">
-                    <a class="super-product" href="">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Inkjet-printer/ET-2400.png" alt="ET-2400">
-                            <h2 class="product-name" align="center">ET-2400</h2>
+                            <h2 class="product-name" align="center">ET-2400 <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href=""> Buy Now </a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Inkjet-printer/ET-4850.png" alt="ET-4850">
-                            <h2 class="product-name" align="center">ET-4850</h2>
+                            <h2 class="product-name" align="center">ET-4850 <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Inkjet-printer/PIXMA G4770.png" alt="PIXMA G4770">
-                            <h2 class="product-name" align="center">PIXMA G4770</h2>
+                            <h2 class="product-name" align="center">PIXMA G4770 <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                             <a class="buy" href="">Buy Now</a>
                         </div>
                     </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
 
                     <a class="super-product" href="Inkjet printer.html">
                         <div class="more">
@@ -317,35 +361,45 @@
             </div>
 
 
+
             <!-- Accesroies -->
 
 
+
             <div class="product-row">
-                <h1 class="Section-head">Accesroies</h1>
+                <h1 class="Section-head">Accesroies</h1>    <!--header to know the type of product -->
+
+                <!-- parent container -->
+
                 <div class="product-section">
-                    <a class="super-product" href="">
+
+                    <!-- child containers a (super-product) can be click and be taken to the described product page (contains product image name price and buy now link) -->
+
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Accessories/3D Print Removal.png" alt="3D Print Removal">
-                        <h2 class="product-name" align="center">3D Print Removal</h2>
+                        <h2 class="product-name" align="center"> 3D Print Removal <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                         <a class="buy" href=""> Buy Now </a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Accessories/Pilers.png" alt="Pilers">
-                        <h2 class="product-name" align="center">Pilers</h2>
+                        <h2 class="product-name" align="center">Pilers <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                         <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
                         </div>
                     </a>
 
-                    <a class="super-product" href="">
+                    <a class="super-product" href="dec-product.html">
                         <div class="product">
                             <img class="product-img" src="/images/Accessories/PVA Glue Stick.png" alt="PVA Glue Stick">
-                        <h2 class="product-name" align="center">PVA Glue Stick</h2>
+                        <h2 class="product-name" align="center">PVA Glue Stick <br> <span style="font-size: 17px;"> Price : $2.00 </span> </h2>
                         <a class="buy" href="">Buy Now</a>
                         </div>
                     </a>
+
+                    <!-- see more to go to dedicated products section of that kind -->
 
                     <a class="super-product" href="">
                         <div class="more">
@@ -361,12 +415,26 @@
 
 
         <!-- footer starts here -->
+
+
         <footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  ">
+
+            <!-- footer divide into two part upper-footer and lower-footer -->
+
+
+            <!-- upper-footer start from here (it contain our logo and little discription and few links and news-letter signup section)  -->
+
             <div class="upper-footer">
+
+
+                <!-- footer logo -->
+
                 <div class="Footer-logo">
                     <h1 style="font-size: 40px; margin-bottom: 0%;">Inkspire</h1>
                     <h3 style="margin: 0%; padding-left: 10%; font-size: 10px;">"Speed up Productivity"</h3>
                 </div>
+                 
+                <!-- description about us  -->
 
                 <div class="des">
                     <p ">"Inkspire: Your worldwide hub for <br>
@@ -376,6 +444,8 @@
                         Inkspire."
                     </p>
                 </div>
+
+                <!-- few links to go another pages  -->
 
                 <div class="links">
                     <h2 style="margin-top: 70%; margin-bottom: 0%; font-size: 20px;">Links</h2>
@@ -389,10 +459,15 @@
                     </ul>
                 </div>
 
+                <!-- news-letter signup section -->
+
                 <div class="news-letter">
+
                     <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
                         News Letter
                     </h1>
+
+                    <!-- form -->
                     <form action="">
                         <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
                         <input class="letter" type="email" placeholder="Lets Stay Conneted">                  
@@ -406,8 +481,18 @@
             <br>
 
             <hr width="80%">
+
+            <!-- lower-footer starts from here it contains copyright section and our social media links -->
+
             <div class="lower-footer">
+
+                <!-- copyright section -->
+
                 <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
+
+
+                <!-- social media links -->
+
                 <div class="social">
                     <a href=""><img class="footer-icon" src="/images/facebook.png" alt=""></a>
                     <a href=""><img class="footer-icon" src="/images/instagram.png" alt=""></a>
