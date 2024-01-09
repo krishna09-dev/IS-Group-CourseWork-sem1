@@ -6,7 +6,45 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
+        .main{
+            width: 95%;
+            height: 100vh;
+            margin-left: 2%;
+            border: solid white;
+            color: aliceblue;
+        }
+        .list ul li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #8a8a8a;
+        }
+        .list ul li{ 
+            padding-left: 5%;      
+            padding-right: 5%;
+            padding-bottom: 0%;
+        }
+        .list ul{  
+            display: flex;
+            list-style-type: none;
+
+        }
+        element.style{
+            background-image: url(/images/profile-pic/aarju.png);
+        }
+        .photo{
+            width: 300px;
+            height: 300px;
+            margin-left: 40%;
+            margin-top: 60px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .p{
+            margin-left: 8%;
+        }
+        .R{
+            margin-left: 8%;
+        }
     </style>
 </head>
 <body>
@@ -48,13 +86,16 @@
 
 <!-- navigation ends here -->
 
-<nav>
-    <table width="100%" >
+<div class="main"> 
+    <table> 
         <tr>
-            <th class="nav-list" style="height: 40px;">
+            <th>
+                <h1> Aarju( ); </h1>
+            </th>
+            <th class="list" style="height: 40px;"  >
                 <ul>
                     <li>
-                        <a href="">About Me</a>
+                        <a href="">AboutMe</a>
                     </li>
                     <li>
                         <a href="">Contact</a>
@@ -63,7 +104,23 @@
             </th>
         </tr>
     </table>
-</nav>
+    <hr width="90%" >
+    <div class="photo" style="background-image: url(/images/profile-pic/aarju.png);">
+    </div>
+        <h2 align="center" > ............. </h2>
+        <div class="p">
+            <h1><b>Aboutme</b></h1>
+        </div>
+        <hr width="90%"> 
+
+
+        <div class="R">
+            <h1><b>Skills</b></h1>
+        </div>
+        <hr width="90%">
+</div>
+
+
 
 <!-- footer starts here -->
 <footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  ">
