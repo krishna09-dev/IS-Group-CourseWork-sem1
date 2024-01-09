@@ -13,20 +13,17 @@
             border: solid white;
             color: aliceblue;
         }
-        .list ul li a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #8a8a8a;
-        }
-        .list ul li{ 
-            padding-left: 5%;      
-            padding-right: 5%;
-            padding-bottom: 0%;
-        }
         .list ul{  
             display: flex;
             list-style-type: none;
-
+            margin-bottom: 0;
+        }
+        .list ul li a{
+            /* padding-top: 10px;
+            padding-bottom: 0; */
+            margin-left: 20px;
+            margin-top: 1px; 
+            margin-bottom: 0;
         }
         .style{
             background-image: url(/images/profile-pic/aarju.png);
@@ -87,18 +84,21 @@
 <!-- navigation ends here -->
 
 <div class="main"> 
-    <table> 
+    <table style="width: 100%;"> 
         <tr>
-            <th>
-                <h1> Aarju( ); </h1>
+            <th style="width: 75%;">
+                <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> Aarju( ); </h1>
             </th>
-            <th class="list" style="height: 40px;"  >
+            <th class="list">
                 <ul>
                     <li>
                         <a href="">AboutMe</a>
                     </li>
                     <li>
                         <a href="">Contact</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="/images/about-icons/nav-github.png" alt="" style="width: 20px; "></a>
                     </li>
                 </ul>
             </th>
