@@ -9,37 +9,40 @@
     <meta http-equiv="refresh" content="120">
     <link rel="stylesheet" href="style.css">
     <style>
-    .blog-section .blog-section-h1{
+    .blog-section{
+        background-color: white;
+        height: 285vh;
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 70px;
+        padding-top: 3%;
+        
+    }        
+        
+    .blog-section-h1 {
         font-size: 60px;
-        margin-bottom: 150px;
-        margin-top: 150px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        padding-bottom: 2%;
+        padding-top: 2%;
         color: white;
-        font-family:cursive;
-       
+        font-family:cursive;       
 }
     .blog {
         width: 85%;
-        height: 100vh;
-        background-color: white;
-        margin: 100px;
-        margin-top: 1%;
-        margin-bottom: 150px;
-        border-radius: 80px;
+        height: auto;
+        
+        margin-top: 100px;
+        margin-bottom: 0px;
         display: flex;
-        align-items: center;
 }
 
     .blog img {
-        width: 30%;
-        height: 55%;
+        width: 40%;
+        height: 450px;
         margin-right: 50px;
-        margin-left: 50px;
-}
-    .blog img2 {
-        width: 30%;
-        height: 100%;
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-left: 55px;
+
 }
 
     .blog p {
@@ -47,21 +50,41 @@
         text-align: justify;
         font-weight: bold; 
         font-family:cursive; 
+        margin-top: 0;
 }
-    .a1{
-        width: 55%;
-        height: -500vh;
-        margin: -90px;
-        margin-top: -90px;
-        align-items: center;
-}   
+   
+  
     .a2{
-        width: 55%;
-        height: -500vh;
-        margin: 100px;
-        margin-top: -200px;
-        align-items: center;
+        
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
 }   
+    .a3{
+        width: 85%;
+        height: -500vh;
+        margin: 50px;
+        margin-top: 10px;
+        align-items: left;
+}
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+    .left-side, .right-side {
+        flex: 1;
+        padding: 20px;
+        background-color: white;
+        text-align: justify;
+
+}
+    .conclusion{
+        padding: 30px;
+}
+    
     </style>
 </head>
 
@@ -105,22 +128,53 @@
         <img src="/images/logo.png" alt="logo" style="width: 40vh; height: auto;">
     </div>
 
+
+    <h1 class="blog-section-h1" align="center">Blog</h1>
+
+
     <div align="center" class="blog-section">
-        <h1 class="blog-section-h1">Blog</h1>
+        
         <h1 class="a1" align="center">Technology with our daily life and businesses</h1>
         <div class="blog">
                    
             <img src="/images/technology.png" alt="blog Image">
-        <p>Technology has become the invisible thread weaving through the tapestry of our daily lives and businesses. From the moment we wake up to the glow of our smartphones to the final scroll before sleep, technology shapes our experiences, decisions, and interactions. But amidst its undeniable convenience and progress, it's crucial to acknowledge the double-edged sword that technology wields. Let's delve into the positive and negative impacts of technology on our daily lives and businesses.
+             <p>Technology has become the invisible thread weaving through the tapestry of our daily lives and businesses. From the moment we wake up to the glow of our smartphones to the final scroll before sleep, technology shapes our experiences, decisions, and interactions. But amidst its undeniable convenience and progress, it's crucial to acknowledge the double-edged sword that technology wields. Let's delve into the positive and negative impacts of technology on our daily lives and businesses.
                 Technology has become an aspect of our lives and the world of business. It serves as a means, for communication staying updated, acquiring knowledge making purchases and finding entertainment. Additionally technology has greatly. Enhanced our lives. For instance online banking enables us to settle bills, shop for groceries and plan trips from the comfort of our homes. It also allows us to connect with friends and family who live away.
                 Businesses have also experienced a transformation due to technology. It has enabled them to operate while reaching a broader audience. With the advent of e commerce businesses can now sell their products and services online. They can also utilize media platforms to engage with customers and promote what they offer.
                 The impact of technology on both our lives and businesses will undoubtedly continue expanding in the future. As technology progresses further we can anticipate exciting changes, in how we live and work.
  
             </p>   
         </div>
-        <h1 class="a2" align="center">Impact of technology on our daily life and business <br><br>  <img src="/images/impact of tech.jpg" alt="blog Image"style="width: 100%; height: 300px;"> </h1>
-    
+        <h1 class="a2" align="center">Impact of technology on our daily life and business </h1>
+        <img src="/images/impact of tech.jpg" alt="blog Image"style="width: 90%; height: 450px;"> 
+        <div class="container">
+            <div class="left-side">
+                <h1>Negative Impact</h1>
+                <p><b>The pervasive use of technology in daily life has led to concerns about social isolation, as excessive reliance on digital platforms can result in a decline in face-to-face interactions and genuine human connections. Privacy issues arise from the extensive collection of personal data by technology companies, leading to ethical and security concerns. Additionally, constant exposure to targeted advertisements and data tracking erodes individuals' sense of privacy.<br/>
+
+                    In the business landscape, a significant challenge is job displacement due to automation and artificial intelligence. While technology streamlines processes, it often results in job redundancies, necessitating workforce retraining and upskilling efforts. Cybersecurity threats pose a constant risk to businesses, with the potential for severe financial and reputational damage. The rapid pace of technological change can also create a mismatch between employees' skills and evolving job roles, posing recruitment and retention challenges for businesses.</b></p>
+            </div>
+            <div class="right-side">
+                <h1>Positive Impact</h1>
+                <p><b> Technology has enhanced daily life by fostering global connectivity through instant communication and online platforms. It brings convenience through innovations like online shopping and smart devices. Education has been transformed with online learning opportunities and access to vast information. Healthcare benefits from advanced diagnostics and telemedicine. Overall, technology has improved communication, convenience, education, and healthcare in our daily lives.<br/>
+
+                    In the business landscape, technology has brought about automation and efficiency, reducing errors and streamlining operations. Global connectivity has been facilitated through instant communication and e-commerce platforms. Innovation is fostered, allowing businesses to create new products and services. Enhanced customer experiences are possible through personalized services and improved accessibility. Despite challenges, technology has positively impacted efficiency, global connectivity, innovation, and customer experiences in the business world.</b></p>
+            </div>
+        </div>
+        <div class="conclusion">
+            <h1>Conclusion</h1>
+            <p><b>The changing world of technology has brought changes to our daily lives and business practices. Its global connectivity, convenience and innovative nature have had an impact. We now enjoy communication, easy access, to information and services that're available to everyone. However this digital era also presents challenges that require consideration.
+
+                One concern is the potential for isolation as digital interactions sometimes replace face to face connections. Privacy issues arise due to the sharing of data, which highlights the importance of ethical considerations in how we use data. The impact of technology on the job market is also significant with automation and artificial intelligence changing employment dynamics. The fear of job displacement emphasizes the need for efforts in enhancing skills and knowledge.
+                
+                To overcome these challenges it is essential to establish frameworks that ensure transparency, accountability and inclusivity in technological development. Ethical considerations should be at the forefront of innovation to promote distribution of benefits and align technological progress, with values.
+                
+                It is not enough to coexist with technology; we must actively shape its direction. A comprehensive approach involves addressing challenges head on while fostering innovation. By doing we can create a future where technology enhances our lives without compromising our core values.
+                By adopting this strategy we can foster an enduring connection, between people, companies and the evolving world of technology guaranteeing a beneficial influence on society, as a whole.</b></p>
+        </div>
     </div>
+
+
     <!--footer starts here -->
     <footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  ">
         <div class="upper-footer">
