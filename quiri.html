@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title> | Contact Us</title>
+    <meta name="author" content="Prithvi>
+    <meta name="description" content="servies which inkspire has to offer">
+    <meta name="keywords" content="inkspire, team , team-members, Prithvi, Krishna, Aarju, Safal, inkspire team">
+    <!-- Linking with CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">  
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <!-- Linking with fontawesome using javascript -->
+    <script src="https://kit.fontawesome.com/86e376be4b.javascript" crossorigin="anonymous"></script>
+    <!-- Using internal CSS -->
+    <style>
+        ::-webkit-input-placeholder {
+            color: #F5F5DC;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Creating a navigation bar for the website -->
+        <nav>
+            <div class="com">
+                <img class="logo" src="../images/logo.png" width="80" height="80" alt="Inkspire">
+                <p>inkspire</p>
+            </div>
+            <b>
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/products.html">Products</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
+                    <li><a href="../pages/services.html">Services</a></li>
+                    <li><a href="../pages/aboutus.html">About Us</a></li>
+                    <li><a href="#" class="active">Contact Us</a></li>
+                </ul>
+            </b>
+        </nav>
+    </header>
+
+    <!-- opeining of container -->
+    <div class="container">
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">The  is a website that sells printer . This site was created in 2023.
+                    If you need any assistance please feel free to contact us anytime in our social media platform or
+                    you can directly give us a call.We are here to help you.
+                </p>
+                <div class="info">
+                    <div class="informa">
+                        <img src="../images/location.png" class="icon" alt="location">
+                        <p>Kamalpokhari, Kathmandu</p>
+                    </div>
+                    <div class="informa">
+                        <img src="../images/email.png" class="icon" alt="email">
+                        <p>TeamFour@gmail.com</p>
+                    </div>
+                    <div class="informa">]
+                         
+                        <img src="../images/phone.png" class="icon" alt="phone">
+                        <p>007-112-326</p>
+                    </div>
+                    <div class="social">
+                        <p>Connect with us :</p>
+                        <div class="sicon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form name="messageForm" onsubmit="validateForm()">
+                    <h3 class="title">CONTACT US</h3>
+                    <div class="input-con">
+                        <input type="text" name="name" class="input" placeholder="Name">
+                    </div>
+                    <div class="input-con">
+                        <input type="email" name="email" class="input" placeholder="Email">
+
+                    </div>
+                    <div class="input-con">
+                        <input type="tel" name="phone" class="input" placeholder="Phone Number">
+                    </div>
+                    <div class="input-con textarea">
+                        <textarea name="message" class="input" placeholder="Enter a message"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" class="sub">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Closing container -->
+
+    <script src="../js/time.js"></script>
+    <!-- Using Internal javascript -->
+    <script type="text/javascript">
+        function validateForm() {
+            var name = document.forms["messageForm"]["name"].value;
+            // alert(Name);
+            var email = document.forms["messageForm"]["email"].value;
+            // alert(Email);
+            var phone = document.forms["messageForm"]["phone"].value;
+            // alert(Phone);
+            var message = document.forms["messageForm"]["message"].value;
+            // alert(messageDetails);
+            if(name == "" && email == "" && phone == "" && message == ""){
+                alert("All fields are empty. Please fill in all fields before submitting.")
+            }
+            else if (name == "") {
+                alert("Name is empty. Please enter a valid name.")
+            }
+            else if (email == "") {
+                alert("Email is empty. Please enter an email.")
+            }
+            else if (phone == "") {
+                alert("Phone number is empty. Please enter a phone number.")
+            }
+            else if (message == "") {
+                alert("Message box is empty. Please enter message.")
+            }
+            else {
+                alert("Thank you for your feedback!!!");
+            }
+        }
+    </script>
+</body>
+
+</html>
+kit.fontawesome.com
