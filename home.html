@@ -8,47 +8,6 @@
             <meta http-equiv="refresh" content="120">
             <link rel="stylesheet" href="style.css">
         <style>
-            /* .container{
-                color: white;
-                font-size: 15px;
-                margin: 50px;
-                border: solid;
-            }
-            .home-section{
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-wrap:wrap;
-            }
-            .product{
-                width: 20%;
-                height: 40vh;
-                background-color: white;
-                margin: 20px;
-                border-radius: 30px;
-            }
-            .product-footer{
-                margin-top: 20%;
-                margin-bottom: 10%;
-            }
-            .product-footer .updates-h1{           
-                font-size: 40px;
-                margin-top: 5%;
-                margin-bottom: 0;
-            }
-            .product-footer .updates-h4{
-                font-size: 20px;
-                margin: 10px;
-            
-            }
-            
-            .home-footer .updates-h4{
-                font-size: 20px;
-                margin: 10px;
-                font-family: cursive;
-            } */
-
-
             .container{
                 display: flex;
                 justify-content: center;
@@ -73,10 +32,17 @@
                 margin-bottom: 2%; 
                 border-radius: 30px;
             }
-            .service-link{
+            .service-text{
                 padding-top: 15%; 
                 margin-bottom:0; 
                 font-size: 20px
+            }
+            .service-link{
+                text-decoration: none;
+                color: black;
+            }
+            .service-link:hover{
+                text-decoration: underline;
             }
 
             .video-overlay-h1{
@@ -103,7 +69,7 @@
                 border-radius: 20px;
                 border: solid 2px black;
                 margin-top: -430px;
-                margin-left: -100px;
+                margin-left: -90px;
                 font-size: 20px;
                 background-color: #fff;       
             }
@@ -112,14 +78,6 @@
                 color: #fff;
                 border: solid 2px white;
             }
-
-            /* .center {
-                position: absolute;
-                display: flex;
-                justify-content: auto;
-                align-items: auto;
-                height:auto;
-            } */
             .product-button{
                 margin-top: 30px;
                 width: 170px;        
@@ -169,12 +127,6 @@
                 background-color: #fff;
                 border-radius: 30px;
             }
-            /* .product-section{
-                width: 100%;
-                height: auto;
-                display: flex;
-                flex-wrap:wrap;
-            } */
             
 
         </style>
@@ -262,26 +214,26 @@
                 <h1 align="center" style="padding-top: 33%; margin-bottom:0; font-size: 25px;">
                     Frequently Asked Questions
                 </h1>
-                <h5 align="center" style="margin: 0; "><a href="" style="text-decoration: none; color: black;">
+                <h5 align="center" style="margin: 0; "><a href="" class="service-link" >
                     Learn more</a>
                 </h5>
             </div>
 
             <div class="col2">
                 <div class="row1" >
-                    <h1 align="center" class="service-link">
+                    <h1 align="center" class="service-text">
                         Support
                     </h1>
-                    <h5 align="center" style="margin: 0; "><a href="" style="text-decoration: none; color: black;">
+                    <h5 align="center" style="margin: 0; "><a href="support.html" class="service-link" >
                         Learn more</a>
                     </h5>
                 </div>
 
                 <div class="row2" >
-                    <h1 align="center" class="service-link">
+                    <h1 align="center" class="service-text">
                         Our location
                     </h1>
-                    <h5 align="center" style="margin: 0; "><a href="" style="text-decoration: none; color: black;">
+                    <h5 align="center" style="margin: 0; "><a href="location.html" class="service-link" >
                         Learn more</a>
                     </h5>
                 </div>
@@ -290,7 +242,7 @@
 
         <!-- other section ends here -->
 
-        
+
         
         <!-- footer starts here -->
         <footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  ">
