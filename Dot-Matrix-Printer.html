@@ -179,7 +179,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/MSP 250.png" alt="MSP 250">
                         <h2 class="product-name" align="center">MSP 250 <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href=""> Buy Now </a>
+                        <a class="buy" href="checkout.html"> Buy Now </a>
                     </div>
                 </a>
 
@@ -187,7 +187,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/Msp 240 Classic.png" alt="Msp 240 Classic">
                         <h2 class="product-name" align="center">Msp 240 Classic <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href="" style="margin-left: 40%;">Buy Now</a>
+                        <a class="buy" href="checkout.html" style="margin-left: 40%;">Buy Now</a>
                     </div>
                 </a>
 
@@ -195,7 +195,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/LX-310.png" alt="LX-310">
                         <h2 class="product-name" align="center">LX-310 <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href="">Buy Now</a>
+                        <a class="buy" href="checkout.html">Buy Now</a>
                     </div>
                 </a>
 
@@ -203,7 +203,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/FX-890.png" alt="FX-890">
                         <h2 class="product-name" align="center">FX-890 <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href="">Buy Now</a>
+                        <a class="buy" href="checkout.html">Buy Now</a>
                     </div>
                 </a>
 
@@ -211,7 +211,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/FX-2190.png" alt="FX-2190">
                         <h2 class="product-name" align="center">FX-2190 <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href="">Buy Now</a>
+                        <a class="buy" href="checkout.html">Buy Now</a>
                     </div>
                 </a>
 
@@ -219,7 +219,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/FX-2175.png" alt="FX-2175">
                         <h2 class="product-name" align="center">FX-2175 <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href="">Buy Now</a>
+                        <a class="buy" href="checkout.html">Buy Now</a>
                     </div>
                 </a>
 
@@ -227,7 +227,7 @@
                     <div class="product">
                         <img class="product-img" src="/images/Dot-Matrix-Printers/DFX-9000.png" alt="DFX-9000">
                         <h2 class="product-name" align="center">DFX-9000 <br><span style="font-size: 17px;"> Price : $2.00 </span></h2>
-                        <a class="buy" href="">Buy Now</a>
+                        <a class="buy" href="checkout.html">Buy Now</a>
                     </div>
                 </a>
             </div>
@@ -279,9 +279,9 @@
                     <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
                         News Letter
                     </h1>
-                    <form action="">
+                    <form name="news-form" onsubmit="validate_newsletter()">
                         <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
-                        <input class="letter" type="email" placeholder="Lets Stay Conneted">
+                        <input class="letter" name="newsletter" type="email" placeholder="Lets Stay Conneted">                 
                         <button class="button"><img src="/images/send.png" alt="" style="width: 20px; height: 20px;"></button><br>
                         <hr style="margin-top: 0%; margin-bottom: 1%;">
                         <h5 style="margin: 0%;">I accept all the terms and condition.</h5>
@@ -306,4 +306,6 @@
         <!-- footer ends here -->
         
     </body>
+
+    <script src="javascript.js"></script>
 </html>

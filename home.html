@@ -66,6 +66,8 @@
                 color: black;
                 width: 150px;
                 height: 40px;
+                padding-top: 5px;
+                text-decoration: none;
                 border-radius: 20px;
                 border: solid 2px black;
                 margin-top: -430px;
@@ -179,7 +181,7 @@
             <h1 class="video-overlay-h1">Ready to Print Everything!!</h1>
             <h2 class="video-overlay-h2">"Eco-friendly printing option help reduce enviroment impact."</h2>
             <br>
-            <button class="video-overlay-button">Shop Now</button>
+            <a class="video-overlay-button" href="Products.html">Shop Now</a>
         
         </div>
 
@@ -199,7 +201,9 @@
                 <div class="product-col2"></div>
                 <div class="product-col3"></div>
             </div>
-            <button class="product-button">See More</button>
+            <a href="Products.html">
+                <button class="product-button">See More</button>
+            </a>
             
         </div>
 
@@ -274,9 +278,9 @@
                     <h1 style="margin: 0%; font-family: cursive; font-weight: 100;">
                         News Letter
                     </h1>
-                    <form action="">
+                    <form name="news-form" onsubmit="validate_newsletter()">
                         <img src="/images/mail.png" alt="mail" style="width: 20px; height: 20px; padding-top:2px;">
-                        <input class="letter" type="email" placeholder="Lets Stay Conneted">              
+                        <input class="letter" name="newsletter" type="email" placeholder="Lets Stay Conneted">                 
                         <button class="button"><img src="/images/send.png" alt="" style="width: 20px; height: 20px;"></button><br>
                         <hr style="margin-top: 0%; margin-bottom: 1%;">
                         <h5 style="margin: 0%;">I accept all the terms and condition.</h5>
@@ -297,6 +301,7 @@
         </footer>
         <!-- footer ends here -->
     </body>
+    <script src="javascript.js"></script>
 
 </html>
            
