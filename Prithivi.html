@@ -6,13 +6,15 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .about{
+            display: none;
+        }
         .main{
             width: 95%;
-            height: auto;
+            /* height: auto; */
             margin-left: 2%;
             border: solid white;
             color: aliceblue;
-
         }
         .list ul{  
             display: flex;
@@ -36,7 +38,7 @@
             margin-top: 60px;
             border-radius: 50%;
             border: 5px solid #8a8a8a;
-            background-image: url(/images/profile-pic/aarju.png);
+            background-image: url(/images/profile-pic/prithvi.png);
         }
         .about-text{
             margin: 0;
@@ -47,6 +49,52 @@
         }
         .tech_stack li{
             margin-left: 50px;
+        }
+        .profile-links img{
+            width: 43px;
+            height: 43px;
+        }
+
+        /* form */
+        .single-contact{
+            margin-top: 50px;
+            margin-left: 100px;
+            margin-bottom: 70px;
+        }
+        label{
+            color: white;
+        }
+        .input-box{
+            height: 15px;
+            background-color: transparent;
+            border: 0px;
+            background-color: white;
+            width: 270px;
+            outline: none;
+            border-radius: 10px;
+            color: black;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .input-box:focus{                              /* for changing color when clicked*/
+            background-color: #bababa;
+            color: black;
+        }
+        .send-button{
+            width: 90px;
+            height: 30px;
+            border-radius: 30px;
+            background-color: white;
+            border: solid 2px black;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .send-button:hover{
+            background-color: rgb(0, 0, 0);
+            border: solid 2px white;
+            color: white;
         }
     </style>
 </head>
@@ -94,7 +142,7 @@
         <table style="width: 100%;"> 
             <tr>
                 <th style="width: 75%;">
-                    <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> Prithivi( ); </h1>
+                    <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> prithvi( ); </h1>
                 </th>
                 <th class="list">
                     <ul>
@@ -115,7 +163,7 @@
         <div class="about">
             <div class="photo" style="background-image: url(/images/profile-pic/prithvi.png);"></div>
             <div align="center">
-                <h2 class="about-text"> Howdy!! </h2>
+                <h2 class="about-text"> Howdy!!</h2>
                 <h2 class="about-text">It's me Prithivi Raj Sah.</h2>
                 <h2 class="about-text">Welcome to my about section</h2>
             </div>
@@ -123,7 +171,8 @@
             <hr width="90%">
             <p style="margin-left: 5%; margin-right: 5%;">Hi,I am Prithivi Raj Shah a dedicated and proactive individual from Nepal.
                 As a computing student from coding in languages like Java python to diving into database management and software development, 
-                I've gained a wide range of skills to analyze problems and come up with creative solutions.I am passionate about technology and eager to become a tech expert 
+                I've gained a wide range of skills to analyze problems and come up with creative solutions.
+                I am passionate about technology and eager to become a tech expert 
                 With a thirst for knowledge and a drive to succeed, I am committed to embracing the opportunities that come my way, 
                 and I am enthusiastic about the journey ahead in the ever evolving world of technology</p>
             
@@ -147,13 +196,51 @@
                         <li>Java</li>
                     </ul>
                 </div>
-            </div>
         </div>
 
-    <div class="contact">
+        <div class="contact">
+            <div style="display: flex; justify-content: center;">
+                <h1 align="center" style="color: whitesmoke;margin: 0;">Get in Touch !!!&nbsp;&nbsp; </h1><img src="/images/mail.png" alt="mail" style="width: 50px; height: 50px;">
+            </div>
+            <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
+            <h1> Prithivi Raj Sah</h1>
+            <h1>prithivirajsah584@gmail.com</h1>
+            <h1> +977 9819718549</h1>
+            <div class="profile-links">
+                <a href="https://www.facebook.com/profile.php?id=100084882249955&mibextid=ZbWKwL">
+                    <img src="images/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/prithivirajsah1?igsh=YWtncHBibzU4bml5">
+                    <img src="images/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/prithivirajsah-bb4314297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <img src="images/linkdein.png" alt="linkdein">
+                </a>
+                <a href="https://x.com/PrithiviRajSah1?t=M79ogLW0fLyG7ld61ZFkFw&s=09">
+                    <img src="images/twitter.png" alt="twitter">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </div>
 
-
-    </div>
+            <H1 style="color:;">Send Message</H1>
+            <div class="single-contact">
+                <form >
+                    <label >Name</label> <br>
+                    <input type="text" class="input-box"  placeholder="Name"> <br> 
+                    
+                    <label >Email</label> <br>
+                    <input type="email" class="input-box" placeholder="Email"><br> 
+            
+                    <label >Message</label> <br>
+                    <textarea class="input-box" name="message" cols="30" rows="10" placeholder="Message" style="height: auto;"></textarea><br>
+        
+                    <button class="send-button">Send</button>
+                    
+                </form>
+            </div>
+        </div>
 </div>
 
 <!-- footer starts here -->
