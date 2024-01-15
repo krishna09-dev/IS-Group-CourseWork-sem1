@@ -1,4 +1,4 @@
-456etrtehbn<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,15 @@
     <title>CV</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .about{
+            display: none;
+        }
         .main{
             width: 95%;
-            height: auto;
+            /* height: auto; */
             margin-left: 2%;
             border: solid white;
             color: aliceblue;
-
         }
         .list ul{  
             display: flex;
@@ -38,12 +40,6 @@
             border: 5px solid #8a8a8a;
             background-image: url(/images/profile-pic/aarju.png);
         }
-        .A{
-             margin-left: 7%;
-        }
-        .B{
-            margin-left: 7%;
-        }
         .about-text{
             margin: 0;
         }
@@ -53,6 +49,10 @@
         }
         .tech_stack li{
             margin-left: 50px;
+        }
+        .profile-links img{
+            width: 43px;
+            height: 43px;
         }
     </style>
 </head>
@@ -96,7 +96,7 @@
 <!-- navigation ends here -->
 
 <div class="main"> 
-    <div class="about">
+    
         <table style="width: 100%;"> 
             <tr>
                 <th style="width: 75%;">
@@ -118,46 +118,65 @@
             </tr>
         </table>
         <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
+        <div class="about">
             <div class="photo" style="background-image: url(/images/profile-pic/aarju.png);"></div>
-        <div align="center">
-            <h2 class="about-text"> Howdy!! </h2>
-            <h2 class="about-text">It's me Aarju sapkota.</h2>
-            <h2 class="about-text">Welcome to my about section</h2>
-        </div>
-        <div class="A">
-            <h1><b>Aboutme</b></h1>
-        </div>
-        <hr width="90%">
-        <h3 style="margin-left: 5%; margin-right: 5%;">Hi, It's me Aarju Sapkota from Beautiful city Pokhara Nepal.
-        As a BSc Computing student, I am  passionate about technology and eager to learn more about programming,software development,and computer systems.I am dedicated to improve myself and grow in the tech world by believing in continuous learning and embracing new challenges and committed to honing my skills and making a real impact in the world of computing.
-        There's many challenges to software development,the possibilities are endless but I am confident enough that I'll explore and seizing those chances 
-        Thankyou.</h3>
-
-        <div class="B"
-            <h1><b>Skills</b></h1>
-        </div>
-        <div>
+            <div align="center">
+                <h2 class="about-text"> Howdy!! </h2>
+                <h2 class="about-text">It's me Aarju sapkota.</h2>
+                <h2 class="about-text">Welcome to my about section</h2>
+            </div>
+            <h1 style="margin-left: 7%;">Aboutme</h1>
             <hr width="90%">
-            <h1 style="font-size: 25PX; margin-left: 7%;">Expertise</h1>
-            <div>
-                <ul class="tech_stack">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>javascript</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-        <h1 style="font-size: 25px; margin-left:8%;">Tools</h1>
-            <div>
-                <ul class="tech_stack">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>javascript</li>
-                    <li>Java</li>
-                </ul>
-            </div>
+            <p style="margin-left: 5%; margin-right: 5%;" >Hi, It's me Aarju Sapkota from Beautiful city Pokhara Nepal.
+                As a BSc Computing student, I am  passionate about technology and eager to learn more about programming,software development,and computer systems.
+                I am dedicated to improve myself and grow in the tech world by believing in continuous learning and embracing new challenges and committed to honing my skills and making a real impact in the world of computing.
+                There's many challenges to software development,the possibilities are endless but I am confident enough that I'll explore and seizing those chances ,Thankyou..</p>
+            
+                <h1 style="margin-left: 7%;">Skills</h1>
+                <hr width="90%">
+                <h1 style="font-size: 25PX; margin-left: 7%;">Expertise</h1>
+                <div>
+                    <ul class="tech_stack">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javascript</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+            <h1 style="font-size: 25px; margin-left:8%;">Tools</h1>
+                <div>
+                    <ul class="tech_stack">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javascript</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
         </div>
-    </div>
+
+        <div class="contact">
+            <div style="display: flex; justify-content: center;">
+                <h1 align="center" style="color: whitesmoke;margin: 0;">Get in Touch !!!&nbsp;&nbsp; </h1><img src="/images/mail.png" alt="mail" style="width: 50px; height: 50px;">
+            </div>
+            <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
+                <h1> Aarju Sapkota</h1>
+                <h1>Aarjusapkota0@gmail.com</h1>
+                <h1> +977 9827118329</h1>
+                <div class="profile-links">
+                    <a href="">
+                        <img src="images/facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/instagram.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/linkdein.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="images/twitter.png" alt="">
+                    </a>
+                </div>
+        </div>
 </div>
 
 <!-- footer starts here -->
