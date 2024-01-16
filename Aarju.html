@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .about{
-            display: none;
+            display: block;
         }
         .main{
             width: 95%;
@@ -162,6 +162,7 @@
             <div align="center">
                 <h2 class="about-text"> Howdy!! </h2>
                 <h2 class="about-text">It's me Aarju sapkota.</h2>
+                <h2 class="about-text" style="color: #FD8989;" id="typing-text"></h2>
                 <h2 class="about-text">Welcome to my about section</h2>
             </div>
             <h1 style="margin-left: 7%;">Aboutme</h1>
@@ -193,7 +194,7 @@
                 </div>
         </div>
 
-        <div class="contact">
+        <div class="contact" style="display: none;">
             <div style="display: flex; justify-content: center;">
                 <h1 align="center" style="color: whitesmoke;margin: 0;">Get in Touch !!!&nbsp;&nbsp; </h1><img src="/images/mail.png" alt="mail" style="width: 50px; height: 50px;">
             </div>
@@ -294,4 +295,21 @@
 <!-- footer ends here -->
 
 </body>
+<script>
+    var dis = document.getElementById("typing-text");
+    var letters = ["U","p","c","o","m","i","n","g"," "," ","W", "e", "b", " "," ","D","e","v","e","l","o","p","e","r",".",".","."];
+    var num = letters.length;
+    function word(i) {
+        dis.innerHTML += letters[i];
+    }
+    
+    function type_text() {
+        for (let i = 0; i < num; i++) {
+            setTimeout(word,i*300,i);
+            
+        }
+    }
+    
+    window.onload = type_text;
+</script>
 </html>
