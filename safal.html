@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .about{
+            display: block;
+        }
+        .contact{
             display: none;
         }
         .main{
             width: 95%;
-            /* height: auto; */
             margin-left: 2%;
-            border: solid white;
-            color: aliceblue;
+            border: solid #8a8a8a;
+            color: #8a8a8a;
         }
         .list ul{  
             display: flex;
@@ -31,6 +33,17 @@
         .list ul li a:hover{
             color: white;
         }
+        .port{
+            background-color: transparent;
+            color: #8a8a8a;
+            border: none;
+            font-size: 20px;
+            margin-left: 25px;
+        }
+        .port:hover{
+            color: white;
+        }
+
         .photo{
             width: 300px;
             height: 300px;
@@ -38,31 +51,40 @@
             margin-top: 60px;
             border-radius: 50%;
             border: 5px solid #8a8a8a;
-            background-image: url(/images/profile-pic/safal.png);
+            background-image: url(/images/profile-pic/aarju.png);
         }
         .about-text{
             margin: 0;
         }
-        .tech_stack{
+        .tech_list{
             display: flex; 
-            margin-bottom: 20px;  
+            margin-bottom: 40px;  
         }
-        .tech_stack li{
+        .tech_list li{
             margin-left: 50px;
         }
+
+
+        /* contact */
+        .profile-links a{
+            text-decoration: none;
+        }
         .profile-links img{
-            width: 43px;
-            height: 43px;
+            width: 35px;
+            height: 35px;
         }
 
         /* form */
+        .contact{
+            margin-left: 10%;
+        }
         .single-contact{
             margin-top: 50px;
-            margin-left: 100px;
             margin-bottom: 70px;
         }
         label{
-            color: white;
+            font-size: 30px;
+            color: #8a8a8a;
         }
         .input-box{
             height: 15px;
@@ -96,12 +118,10 @@
             border: solid 2px white;
             color: white;
         }
+       
     </style>
 </head>
 <body>
-    
-</body>
-</html>
 
 <!-- navigation starts here -->
 
@@ -142,15 +162,15 @@
         <table style="width: 100%;"> 
             <tr>
                 <th style="width: 75%;">
-                    <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> Safal( ); </h1>
+                    <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> Safal(); </h1>
                 </th>
                 <th class="list">
                     <ul>
                         <li>
-                            <a href="">About Me</a>
+                            <button onclick="about_selator()" class="port">About</button>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <button onclick="contact_selator()" class="port" >Contact</button>
                         </li>
                         <li>
                             <a href=""><img src="/images/about-icons/nav-github.png" alt="" style="width: 25px; "></a>
@@ -160,29 +180,32 @@
             </tr>
         </table>
         <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
-        <div class="about">
+
+        <div class="about" id="about">
             <div class="photo" style="background-image: url(/images/profile-pic/safal.png);"></div>
             <div align="center">
                 <h2 class="about-text"> Howdy!! </h2>
-                <h2 class="about-text">It's me Safal Dangal.</h2>
+                <h2 class="about-text">It's me Safal Dangal</h2>
+                <h2 class="about-text" style="color: #FD8989;" id="typing-text"></h2>
                 <h2 class="about-text">Welcome to my about section</h2>
             </div>
             <h1 style="margin-left: 7%;">Aboutme</h1>
             <hr width="90%">
-            <p style="margin-left: 5%; margin-right: 5%;" >Hey there I'm Safal Dangal. I have a passion, for all things tech-related. 
+            <p style="margin-left: 5%; margin-right: 5%;" >
                 My journey into the world of technology began when I completed my high school diploma in Information Technology. 
                 During this time, I laid the foundations for my career in this field. Currently,
                 I work as a NOC (Network Operations Center) Engineer at Huawei Technology, where I contribute my skills and expertise to ensure that networks operate smoothly. 
                 My responsibilities include resolving issues and optimizing network performance. Before this role, I worked as a Datacom Engineer, 
                 gaining experience in data communication technologies. 
                 What drives me is the desire to stay ahead of advancements and make contributions to the ever-changing landscape of IT.
-                Outside of work, you'll often find me exploring gadgets staying up to date with industry trends, and sharing my love, for technology with others.</p>
+                Outside of work, you'll often find me exploring gadgets staying up to date with industry trends, and sharing my love, for technology with others.
+            </p>
             
                 <h1 style="margin-left: 7%;">Skills</h1>
                 <hr width="90%">
                 <h1 style="font-size: 25PX; margin-left: 7%;">Expertise</h1>
                 <div>
-                    <ul class="tech_stack">
+                    <ul class="tech_list">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>javascript</li>
@@ -191,7 +214,7 @@
                 </div>
             <h1 style="font-size: 25px; margin-left:8%;">Tools</h1>
                 <div>
-                    <ul class="tech_stack">
+                    <ul class="tech_list" style="margin-bottom: 90px;">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>javascript</li>
@@ -200,33 +223,35 @@
                 </div>
         </div>
 
-        <div class="contact">
-            <div style="display: flex; justify-content: center;">
-                <h1 align="center" style="color: whitesmoke;margin: 0;">Get in Touch !!!&nbsp;&nbsp; </h1><img src="/images/mail.png" alt="mail" style="width: 50px; height: 50px;">
+        <div class="contact" id="contact">
+            <div style="display: flex; justify-content: center; margin-left: -8%;">
+                <h1 align="center" style="color: #8a8a8a;margin: 0;">Get in Touch !!!&nbsp;&nbsp; </h1><img src="/images/mail.png" alt="mail" style="width: 70px; height: 50px;">
             </div>
-            <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
-            <h1> Safal Dangal</h1>
-            <h1>safaldangal@gmail.com</h1>
-            <h1> +977 9861356616</h1>
+            <hr style="width: 95%; margin-left: -3%; background-color: #8a8a8a; height: 1px;">
+            <br>
+            <br>
+            <h1 style="box-sizing: border-box; font-size: 25px;color: #8a8a8a;"><img src="images/ID.png" alt="" style="width: 40px;"> Safal Dangal</h1>
+            <h1 style="font-size: 25px;color: #8a8a8a;"><img src="images/mail.png" alt="" style="width: 40px;"> Aarjusapkota0@gmail.com</h1>
+            <h1 style="font-size: 25px;color: #8a8a8a;"><img src="images/Phone.png" alt="" style="width: 40px;"> +977 9827118329</h1>
             <div class="profile-links">
-                <a href="https://www.facebook.com/safal.dangal?mibextid=9R9pXO">
-                    <img src="images/facebook.png" alt="facebook">
+                <a href="https://www.facebook.com/arzoo.sapkota?mibextid=gik2fB">
+                    <img src="images/facebook.png" alt="facebook">&nbsp;
                 </a>
-                <a href="https://www.instagram.com/dangal.safal?igsh=MWJ5b3Y4M3d5emFvMA==">
-                    <img src="images/instagram.png" alt="instagram">
+                <a href="https://www.instagram.com/arju_here?igsh=MXRpcGJ4cmN6MHQycA==">
+                    <img src="images/instagram.png" alt="instagram">&nbsp;
                 </a>
-                <a href="">
-                    <img src="images/linkdein.png" alt="linkdein">
-                </a>
-                <a href="">
-                    <img src="images/twitter.png" alt="twitter">
+                <a href="linkedin.com/in/aarju-sapkota-9206982aa">
+                    <img src="images/linkdein.png" alt="linkdein">&nbsp;
                 </a>
                 <a href="">
-                    <img src="" alt="">
+                    <img src="images/twitter.png" alt="twitter">&nbsp;
+                </a>
+                <a href="">
+                    <img src="/images/about-icons/nav-github.png" alt="github">&nbsp;
                 </a>
             </div>
 
-            <H1 style="margin-left: 8%;">Send Message</H1>
+            <H1 style="margin-left:20%; margin-top: 5%;font-size: 60px; color: #FD8989;">Send Message</H1>
             <div class="single-contact">
                 <form >
                     <label >Name</label> <br>
@@ -247,7 +272,7 @@
 
 <!-- footer starts here -->
 
-<footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);  ">
+<footer style="width:100%; height: 40vh;background-color: rgb(0, 0, 0);">
     <div class="upper-footer">
         <div class="Footer-logo">
             <h1 style="font-size: 40px; margin-bottom: 0%;">Inkspire</h1>
@@ -301,4 +326,37 @@
 <!-- footer ends here -->
 
 </body>
+<script>
+
+    // nav  function starts here
+    function about_selator() {
+        document.getElementById("contact").style.display="none";
+        document.getElementById("about").style.display="block";
+    }
+    function contact_selator() {
+        document.getElementById("about").style.display="none";
+        document.getElementById("contact").style.display="block";
+    }
+    document.getElementById("about").style.display="block";
+    // nav  function ends here
+    
+
+
+
+    var dis = document.getElementById("typing-text");
+    var letters = ["U","p","c","o","m","i","n","g"," "," ","W", "e", "b", " "," ","D","e","v","e","l","o","p","e","r",".",".","."];
+    var num = letters.length;
+    function word(i) {
+        dis.innerHTML += letters[i];
+    }
+    
+    function type_text() {
+        for (let i = 0; i < num; i++) {
+            setTimeout(word,i*300,i);
+            
+        }
+    }
+    
+    window.onload = type_text;
+</script>
 </html>
