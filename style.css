@@ -1,6 +1,9 @@
 *{
     font-family: cursive;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: black;
     margin: 0px;
