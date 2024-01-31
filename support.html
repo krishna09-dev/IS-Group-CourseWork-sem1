@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <title>Support</title>
-        <meta name="Descrption" content="servies which inkspire has to offer">
-            <meta name="keyword" content="inkspire, team , team-members, Prithvi, Krishna, Aarju, Safal, inkspire team">
-            <meta name="Author" content="Prithvi">
-            <meta http-equiv="refresh" content="120">
+        <meta name="Descrption" content="Support page of inkspire">
+        <meta name="keyword" content="inkspire, support , help from inkspire, support from inkspire team">
+        <meta name="Author" content="Aarju">
+        <meta http-equiv="refresh" content="120">
         <link rel="stylesheet" href="style.css">
 	<style>
         .main{
@@ -43,7 +43,7 @@
         }
         .send-button{
             width: 90px;
-            height: 30px;
+            height: 40px;
             border-radius: 30px;
             background-color: white;
             border: solid 2px black;
@@ -78,7 +78,7 @@
                         <ul>
                             <!-- child elements li -->
                             <li>
-                                <a href="home.html">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <a href="Products.html">Product</a>
@@ -112,17 +112,18 @@
         <h1 align="center" style="color: white; font-size: 45px;">Support</h1>
 
       <div class="main">
-        <form >
+        <form name="support_form">
             <label >Name</label> <br>
-            <input type="text" class="input-box"  placeholder="Name"> <br> 
+            <input type="text" name="name" class="input-box"  placeholder="Name"> <br> 
             
             <label >Email</label> <br>
-            <input type="email" class="input-box" placeholder="Email"><br> 
+            <input type="email" name="email" class="input-box" placeholder="Email"><br> 
     
             <label >Message</label> <br>
             <textarea class="input-box" name="message" cols="30" rows="10" placeholder="Message" style="height: auto;"></textarea> <br>
 
-            <button class="send-button">Send</button>
+            
+            <button class="send-button" onclick="validate_support()">Send</button>
             
         </form>
         <h1 style="color: black; text-align: center; font-size: 35px;">
@@ -181,10 +182,10 @@
             <div class="lower-footer">
                 <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
                 <div class="social">
-                    <a href=""><img class="footer-icon" src="/images/facebook.png" alt=""></a>
-                    <a href=""><img class="footer-icon" src="/images/instagram.png" alt=""></a>
-                    <a href=""><img class="footer-icon" src="/images/twitter.png" alt=""></a>         
-                    <a href=""><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+                    <a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+                    <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+                    <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+                    <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
                 </div>
             </div>
         </footer>
@@ -194,5 +195,29 @@
 
     </body>
 
-    <script src="javascript.js"></script>
+    <script>
+
+    // newsletter validation starts here
+    function validate_newsletter(){
+    var email = document.forms['news-form']['newsletter'].value;
+        if (email != "") {
+            alert("Thank u for Signing up for Newsletter");
+        }
+    }
+    // newsletter validation ends here
+
+    // support form validation starts here
+    function validate_support(){
+        var name = document.forms['support_form']['name'].value;
+        var email = document.forms['support_form']['email'].value;
+        var message = document.forms['support_form']['message'].value;
+        if (name == "" || email == "" || message == "") {
+            alert("Please fill all the fields");
+        }
+        else{
+            alert("Thank u for contacting us");
+        }
+    }
+
+    </script>
 </html>

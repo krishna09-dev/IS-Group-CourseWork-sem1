@@ -8,6 +8,7 @@
             <meta http-equiv="refresh" content="120">
         <link rel="stylesheet" href="style.css">
         <style>
+            /* product nav start here */
             .product-nav{
                 margin-left: 2.5%;
                 border-radius:30px;
@@ -31,6 +32,9 @@
             .product-nav ul li a:hover{
                 color: #8a8a8a;
             }
+            /* product nav ends here */
+
+            /* product section starts here */
             .container{
                 color: white;
                 font-size: 15px;
@@ -98,6 +102,9 @@
                 font-size: 20px;
                 margin: 10px;
             }
+            /* product section ends here */
+
+            /* location starts here */
             .location{
                 margin-left: 5%;
                 width: 90%;
@@ -115,6 +122,8 @@
                 padding-top: 6%;
                 color: white;
             }
+            /* location ends here */
+
 
             .send-button{
                 margin-top: 15px;
@@ -148,7 +157,7 @@
                     <th class="nav-list" style="height: 40px;">
                         <ul>
                             <li>
-                                <a href="home.html">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <a href="Products.html">Product</a>
@@ -172,6 +181,7 @@
         <!-- navigation ends here -->
 
 
+        <!-- product nav starts here -->
         <div class="product-nav">
             <ul>
                 <li><a href="Products.html">All</a></li>
@@ -182,10 +192,12 @@
                 <li><a href="Accessories.html">Accessories</a></li>
             </ul>
         </div>
+        <!-- product nav ends here -->
+
         <div class="container">
             <h1 style="margin-left: 35px;">3D-printer</h1>
-            <div class="product-section">
-                <a href="dec-product.html">
+            <div class="product-section"> <!--parent container-->
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/P1S.png" alt="P1S">
                         <h2 class="product-name" align="center">Bambu Lab P1S <br><span style="font-size: 17px;"> Price : $2000.00 </span> </h2>
@@ -193,7 +205,7 @@
                     </div>
                 </a>
 
-                <a href="dec-product.html">
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/K1-Max.png" alt="K1 Max">
                         <h2 class="product-name" align="center">K1 Max  <br><span style="font-size: 17px;"> Price : $2500.00 </span> </h2>
@@ -201,7 +213,7 @@
                     </div>
                 </a>
 
-                <a href="dec-product.html">
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/Ender-3-V3-KE.png" alt="Ender3 V3 KE">
                         <h2 class="product-name" align="center">Ender3 V3 KE <br><span style="font-size: 17px;"> Price : $799.00 </span> </h2>
@@ -209,7 +221,7 @@
                     </div>
                 </a>
 
-                <a href="dec-product.html">
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/CR-200B-Pro.png" alt="CR 200B Pro">
                         <h2 class="product-name" align="center">CR 200B Pro <br><span style="font-size: 17px;"> Price : $649.00 </span> </h2>
@@ -217,7 +229,7 @@
                     </div>
                 </a>
 
-                <a href="dec-product.html">
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/3DPrintMill.png" alt="3DPrintMill">
                         <h2 class="product-name" align="center">3DPrintMill  <br><span style="font-size: 17px;"> Price : $869.00 </span> </h2>
@@ -225,7 +237,7 @@
                     </div>
                 </a>
 
-                <a href="dec-product.html">
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/Sermoon-V1.png" alt="Sermoon V1">
                         <h2 class="product-name" align="center">Sermoon V1 <br><span style="font-size: 17px;"> Price : $599.00 </span> </h2>
@@ -233,7 +245,7 @@
                     </div>
                 </a>
 
-                <a href="dec-product.html">
+                <a href="dec-product.html"><!--child container-->
                     <div class="product">
                         <img class="product-img" src="/images/3d-printer/Sermoon-D1.png" alt="Sermoon D1">
                         <h2 class="product-name" align="center">Sermoon D1 <br><span style="font-size: 17px;"> Price : $679.00 </span> </h2>
@@ -242,17 +254,21 @@
                 </a>
             </div>
 
+            <!-- updates section starts here -->
             <div align="center" class="product-footer">
                 <h1 class="updates-h1">Sorry you came to end for this section</h1>
                 <h4 class="updates-h4">Do sign up news-letter for up-coming updates.</h4>
                 <a href="#news-letter-form"><Button class="send-button">Sign up</Button></a>
             </div>
+            <!-- updates section ends here -->
         </div>
 
+        <!-- location starts here -->
         <div align="center" class="location">
             <h1 class="location-h1">Our Location</h1>
             <a href="location.html"><button class="send-button" style="width: 160px;">See Location</button></a>
         </div>
+        <!-- location ends here -->
 
 
         <!-- footer starts here -->
@@ -303,10 +319,10 @@
             <div class="lower-footer">
                 <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
                 <div class="social">
-                    <a href=""><img class="footer-icon" src="/images/facebook.png" alt=""></a>
-                    <a href=""><img class="footer-icon" src="/images/instagram.png" alt=""></a>
-                    <a href=""><img class="footer-icon" src="/images/twitter.png" alt=""></a>
-                    <a href=""><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+                    <a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+                    <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+                    <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+                    <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
                 </div>
             </div>
         </footer>

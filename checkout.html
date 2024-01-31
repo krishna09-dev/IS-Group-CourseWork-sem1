@@ -98,7 +98,7 @@
                     <th class="nav-list" style="height: 40px;">
                         <ul>
                             <li>
-                                <a href="home.html">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
                                 <a href="Products.html">Product</a>
@@ -129,35 +129,36 @@
         <div class="checkout">
     
             <h2 class="form-heading" align="center">Please fill the Billing Details</h2>
-            <form style="margin-left: 10%;" onsubmit="">
+            <form style="margin-left: 10%;" name="checkoutform" onsubmit="validate()">
                 <label>Name:</label>
-                <input type="text" class="input-box" placeholder="Your Full Name Please" style="width: 40%;">
+                <input type="text" name="fullname" class="input-box" placeholder="Your Full Name Please" style="width: 40%;">
                 <br>
                 <label>E-mail:</label>
-                <input type="text" class="input-box" placeholder="E-mail here" style="width: 40%;">
+                <input type="text" name="youremail" class="input-box" placeholder="E-mail here" style="width: 40%;">
                 <br>
                 <label>Phone number:</label>
-                <input type="text" class="input-box" placeholder="Phone Number Please" style="width: 34%;">
+                <input type="text" name="yournumber" class="input-box" placeholder="Phone Number Please" style="width: 34%;">
                 <br>
                 <label>Country:</label>
-                <input type="text" class="input-box" placeholder="Your Country Name Please" style="width: 39%;">
+                <input type="text" name="yourcountry" class="input-box" placeholder="Your Country Name Please" style="width: 39%;">
                 <br>
                 <label>City:</label>
-                <input type="text" class="input-box" placeholder="Your City Name Please" style="width: 42%;">
+                <input type="text" name="yourcity" class="input-box" placeholder="Your City Name Please" style="width: 42%;">
                 <br>
                 <label>Zip Code:</label>
-                <input type="text" class="input-box" placeholder="Your Zip Code Please" style="width: 38%;">
+                <input type="text" name="yourzip" class="input-box" placeholder="Your Zip Code Please" style="width: 38%;">
                 <br>
                 <label>Billing address:</label>
-                <input type="text" class="input-box" placeholder="Your detail address here" style="width: 33%;">
+                <input type="text" name="yourbilling" class="input-box" placeholder="Your detail address here" style="width: 33%;">
                 <br>
                 <label>Payment method:</label> 
-                <input type="radio" name="payment" value="Cash on Delivery"  >Cash on Delivery
+                <input type="radio" name="payment" value="Cash on Delivery" checked >Cash on Delivery
                 <input type="radio" name="payment" value="Online Payment">Online Payment
                 <br><br>
                 <h5 style="margin-top: 0; margin-bottom: 0;">Note : For payment you will be contacted through your mail within 24hr</h5>
                 <br>
-                <button class="Place-Order">Place Order</a></button>
+                <input class="Place-Order" type="submit" value="Place Order">
+                
             </form>
 
         </div>
@@ -207,10 +208,10 @@
     <div class="lower-footer">
         <h6 style="color: #8a8a8a; margin: 0; ">Copyright © 2023 Inkspire. All Rights Reserved by Inkspire teams</h6>
         <div class="social">
-            <a href=""><img class="footer-icon" src="/images/facebook.png" alt=""></a>
-            <a href=""><img class="footer-icon" src="/images/instagram.png" alt=""></a>
-            <a href=""><img class="footer-icon" src="/images/twitter.png" alt=""></a>           <!----icon is let-->
-            <a href=""><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
+            <a href=" https://www.facebook.com/"><img class="footer-icon" src="/images/facebook.png" alt=""></a>
+            <a href=" https://www.instagram.com/"><img class="footer-icon" src="/images/instagram.png" alt=""></a>
+            <a href=" https://twitter.com/"><img class="footer-icon" src="/images/twitter.png" alt=""></a>        
+            <a href=" https://www.linkedin.com/"><img class="footer-icon" src="/images/linkdein.png" alt=""></a>
         </div>
     </div>
 </footer>
