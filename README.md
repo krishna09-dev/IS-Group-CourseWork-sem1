@@ -35,7 +35,7 @@ To run the project locally, follow these steps:
 
 1. Clone the repository:
      ```bash
-    git clone https://github.com/your-username/IS-Group-CourseWork-sem1
+    git clone https://github.com/krishna09-dev/IS-Group-CourseWork-sem1
 
 ## Website Link
 
